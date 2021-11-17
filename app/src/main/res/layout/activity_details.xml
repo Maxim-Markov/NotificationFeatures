@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <Button
+        android:id="@+id/customNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="customClick"
+        android:text="Custom Notification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listNotif" />
+
+    <Button
+        android:id="@+id/MessageNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="messageStyleClick"
+        android:text="Message Style Notification"
+        app:layout_constraintBottom_toTopOf="@+id/listNotif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bigPictureNotif" />
+
+    <Button
+        android:id="@+id/listNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="listStyleClick"
+        android:text="List Style Notification"
+        app:layout_constraintBottom_toTopOf="@+id/customNotif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MessageNotif" />
+
+    <Button
+        android:id="@+id/LongTextNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="longTextClick"
+        android:text="Long Text Notification"
+        app:layout_constraintBottom_toTopOf="@+id/bigPictureNotif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bigPictureNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="bigPictureClick"
+        android:text="bigPicture Notification"
+        app:layout_constraintBottom_toTopOf="@+id/MessageNotif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LongTextNotif" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
